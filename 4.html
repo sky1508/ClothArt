@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Popup Login and Register</title>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+
+ <h1>Collar</h1>
+ <img id="main"/>
+ 
+ 
+ 
+<div class="container">
+	<a id="modal_trigger" href="#modal" class="btn">Click here to Select a collar</a>
+
+	<div id="modal" class="popupContainer" style="display:none;">
+		<header class="popupHeader">
+			<span class="header_title">Collar</span>
+			<span class="modal_close"><i class="fa fa-times"></i></span>
+		</header>
+		
+		<section class="popupBody">
+			<div class="centeredText">
+					<span>Select Your Desired Collar</span>
+				</div>
+			<!-- Social Login -->
+			<div class="social_login">
+				<div class="">
+					<ul id="thumbs">
+						<li><img id="img1" src="collar1.jpg" width="150" height="100" /></li>
+						<li><img id="img2" src="collar2.jpg" width="150" height="100" /></li>
+						<li><img id="img3" src="collar3.jpg" width="150" height="100" /></li>
+					</ul>
+				</div>
+			</div>
+
+			
+		</section>
+	</div>
+</div>
+
+</br>
+
+<div class="container">
+	<a id="modal_trigger_shoulders" href="#modal_sh" class="btn">Click here to Select the type of shoulders</a>
+
+	<div id="modal_sh" class="popupContainer" style="display:none;">
+		<header class="popupHeader">
+			<span class="header_title">Shoulders</span>
+			<span class="modal_close"><i class="fa fa-times"></i></span>
+		</header>
+		
+		<section class="popupBody">
+			<div class="centeredText">
+					<span>Select Your Desired Shoulders</span>
+				</div>
+				
+			<!-- Social Login -->
+			<div class="social_login">
+				<div class="">
+					<ul id="thumbs">
+						<li><img id="img1" src="collar1.jpg" width="150" height="100" /></li>
+						<li><img id="img2" src="collar2.jpg" width="150" height="100" /></li>
+						<li><img id="img3" src="collar3.jpg" width="150" height="100" /></li>
+					</ul>
+				</div>
+			</div>
+
+			
+		</section>
+	</div>
+</div>
+
+</br></br>
+
+<div class="container">
+	<a id="modal_trigger_chest" href="#modal_chest" class="btn">Click here to Select the type of Front</a>
+
+	<div id="modal_chest" class="popupContainer" style="display:none;">
+		<header class="popupHeader">
+			<span class="header_title">Front Side</span>
+			<span class="modal_close"><i class="fa fa-times"></i></span>
+		</header>
+		
+		<section class="popupBody">
+			<div class="centeredText">
+					<span>Select Your Desired Front Side</span>
+				</div>
+				
+			<!-- Social Login -->
+			<div class="social_login">
+				<div class="">
+					<ul id="thumbs">
+						<li><img id="img1" src="collar1.jpg" width="150" height="100" /></li>
+						<li><img id="img2" src="collar2.jpg" width="150" height="100" /></li>
+						<li><img id="img3" src="collar3.jpg" width="150" height="100" /></li>
+					</ul>
+				</div>
+			</div>
+
+			
+		</section>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$("#modal_trigger").leanModal({top : 150, overlay : 0.6, closeButton: ".modal_close" });
+	$("#modal_trigger_shoulders").leanModal({top : 150, overlay : 0.6, closeButton: ".modal_close" });
+	$("#modal_trigger_chest").leanModal({top : 150, overlay : 0.6, closeButton: ".modal_close" });
+
+	$(function(){
+		// Calling Login Form
+		$("#login_form").click(function(){
+			$(".social_login").hide();
+			$(".user_login").show();
+			return false;
+		});
+
+		// Calling Register Form
+		$("#register_form").click(function(){
+			$(".social_login").hide();
+			$(".user_register").show();
+			$(".header_title").text('Register');
+			return false;
+		});
+
+		// Going back to Social Forms
+		$(".back_btn").click(function(){
+			$(".user_login").hide();
+			$(".user_register").hide();
+			$(".social_login").show();
+			$(".header_title").text('Login');
+			return false;
+		});
+
+	})
+</script>
+ 
+ 
+ 
+ 
+ <script>							
+		$(function () {
+    $('#thumbs img').on('click', function () {
+       $('#main').attr('src', $(this).attr('src')); 
+    });
+});
+</script>
+	
+	
+	
+	</body>
+	</html>

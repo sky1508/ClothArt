@@ -1,0 +1,323 @@
+<div id="menSubCategory" ng-controller="menSubCategoriesCtrl">
+
+    <div class="col-sm-12" style="background-color: #d9e0df;">
+
+            <!--Left Side Menu-->
+            <div class="col-sm-1" style="background-color: lightblue;">
+                <div class="row">
+                    <div class="col-sm-4" style="background-color: lightblue;">
+                        <h1>
+                            First</h1>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal1">
+                            Open</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modal1" role="dialog">
+                            <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">
+                                            &times;</button>
+                                        <h4 class="modal-title">
+                                            Modal Header</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="firstImg" ng-repeat="img in firstImg" ng-click="imgCopy(img)">
+                                            <img  width="150" height="100" ng-src="{{ img }}" />
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                                            Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-4" style="background-color: lightblue;">
+                        <h1>
+                            Sec</h1>
+                          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal2">
+                                Open</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal2" role="dialog">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                            <h4 class="modal-title">
+                                                Modal Header</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                           <div id="secondImg" ng-repeat="img in secondImg" ng-click="imgCopy2(img)">
+                                            <img  width="150" height="100" ng-src="{{ img }}" />
+                                        </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div> 
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4" style="background-color: lightblue;">
+                        <h1>
+                            Sec</h1>
+                          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal3">
+                                Open</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal3" role="dialog">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                            <h4 class="modal-title">
+                                                Modal Header</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                           <div id="thirdImg" ng-repeat="img in thirdImg" ng-click="imgCopy3(img)">
+                                            <img  width="150" height="100" ng-src="{{ img }}" />
+                                        </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div> 
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4" style="background-color: lightblue;">
+                        <h1>
+                            Four</h1>
+                          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal4">
+                                Open</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal4" role="dialog">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                            <h4 class="modal-title">
+                                                Modal Header</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                           <div id="FourthImg" ng-repeat="img in fourthImg" ng-click="imgCopy4(img)">
+                                            <img  width="150" height="100" ng-src="{{ img }}" />
+                                        </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!--Front Div-->
+            <div class="col-sm-5" style="background-color: #c0e2ac;">
+                <div class="row">
+                    <img id="main1" width="374" height="135" />
+                </div>
+                <div id="first" class="row">
+                    <img id="main2" width="147" height="630" />
+                    <img id="main4" width="250" height="630" />
+                    <img id="main3" width="147" height="630" />
+                </div>
+            </div>
+            
+            <!--Back Div-->
+            <div class="col-sm-5" style="background-color: #e2dec5;">
+                <div id="fifth" class="row">
+                    <img id="back1" width="374" height="135" />
+                </div>
+                <div id="sixth" class="row">
+                    <img id="back2" width="147" height="630" />
+                    <img id="back4" width="250" height="630" />
+                    <img id="back3" width="147" height="630" />
+                </div>
+            </div>
+          
+            <!--Right Side Menu-->
+            <div class="col-sm-1" style="background-color: lightblue;">
+                <div class="row">
+                    <div class="col-sm-4" style="background-color: lightblue;">
+                        <h1>
+                            First</h1>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal5">
+                            Open</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modal5" role="dialog">
+                            <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">
+                                            &times;</button>
+                                        <h4 class="modal-title">
+                                            Modal Header</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="Div2" ng-repeat="img in firstImg" ng-click="imgCopy5(img)">
+                                            <img  width="150" height="100" ng-src="{{ img }}" />
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                                            Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-4" style="background-color: lightblue;">
+                        <h1>
+                            Sec</h1>
+                          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal6">
+                                Open</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal6" role="dialog">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                            <h4 class="modal-title">
+                                                Modal Header</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                           <div id="Div4" ng-repeat="img in secondImg" ng-click="imgCopy6(img)">
+                                            <img  width="150" height="100" ng-src="{{ img }}" />
+                                        </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div> 
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4" style="background-color: lightblue;">
+                        <h1>
+                            7</h1>
+                          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal7">
+                                Open</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal7" role="dialog">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                            <h4 class="modal-title">
+                                                Modal Header</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                           <div id="Div6" ng-repeat="img in thirdImg" ng-click="imgCopy7(img)">
+                                            <img  width="150" height="100" ng-src="{{ img }}" />
+                                        </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div> 
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4" style="background-color: lightblue;">
+                        <h1>
+                            8</h1>
+                          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal8">
+                                Open</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal8" role="dialog">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                &times;</button>
+                                            <h4 class="modal-title">
+                                                Modal Header</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                           <div id="Div8" ng-repeat="img in fourthImg" ng-click="imgCopy8(img)">
+                                            <img  width="150" height="100" ng-src="{{ img }}" />
+                                        </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div> 
+                </div>
+                
+            </div>
+    </div>
+    
+    <div class="col-sm-12" style="background-color: #d0deea;">
+        <!--Preview-->
+        <div class="col-sm-6" style="background-color: #e2dec5;">
+             <!--To save the entire front & back img using New div-->
+            <button class="btn btn-success" ng-click="save()">Save</button>
+            <h1>Preview</h1>
+            <div id='New'></div>
+        </div>
+
+        <!--Price & Features-->
+        <div class="col-sm-6" style="background-color: #c0e2ac;">
+             <h1>P & F</h1>
+             <table>
+            <tr>
+                <td><h2>Product Name</h2></td>
+                <td><h2>Formal Shirt</h2></td>    
+            </tr>
+
+            <tr>
+                <td><h2>Product Material</h2></td>    
+                <td><h2>Cotton</h2></td>    
+            </tr>
+
+            <tr>
+                <td><h2>Product Quantity</h2></td>        
+                <td><h2>1</h2></td>    
+            </tr>
+
+            <tr>
+                <td><h2>Product Price</h2></td>        
+                <td><h2>Rs. 200</h2></td>    
+            </tr>
+        </table>
+             <button class="btn btn-success" ng-click="">Next</button>
+        </div>
+    </div>
+</div>
